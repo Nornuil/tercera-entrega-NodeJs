@@ -1,0 +1,12 @@
+2022/06/03 13:14:27 [notice] 9140#6884: signal process started
+2022/06/03 13:20:53 [notice] 4604#14048: signal process started
+2022/06/03 14:38:31 [emerg] 8848#13388: unexpected "}" in E:\Curso_NodeJs\clase29\nodejs-forks-cluster-proxy\nginx-1.21.6/conf/nginx.conf:15
+2022/06/03 14:38:56 [emerg] 732#7384: unexpected "}" in E:\Curso_NodeJs\clase29\nodejs-forks-cluster-proxy\nginx-1.21.6/conf/nginx.conf:15
+2022/06/03 14:39:07 [emerg] 1576#14424: unexpected "}" in E:\Curso_NodeJs\clase29\nodejs-forks-cluster-proxy\nginx-1.21.6/conf/nginx.conf:15
+2022/06/03 14:39:19 [emerg] 7288#11760: unexpected "}" in E:\Curso_NodeJs\clase29\nodejs-forks-cluster-proxy\nginx-1.21.6/conf/nginx.conf:15
+2022/06/03 14:41:11 [emerg] 8172#16112: unexpected "}" in E:\Curso_NodeJs\clase29\nodejs-forks-cluster-proxy\nginx-1.21.6/conf/nginx.conf:15
+2022/06/03 15:17:46 [emerg] 8176#852: unexpected "}" in E:\Curso_NodeJs\clase29\nodejs-forks-cluster-proxy\nginx-1.21.6/conf/nginx.conf:15
+2022/06/03 15:18:34 [emerg] 11552#5000: unknown directive "http://localhost:8081" in E:\Curso_NodeJs\clase29\nodejs-forks-cluster-proxy\nginx-1.21.6/conf/nginx.conf:14
+2022/06/03 15:19:11 [emerg] 14628#17008: invalid host in upstream "http://localhost:8081" in E:\Curso_NodeJs\clase29\nodejs-forks-cluster-proxy\nginx-1.21.6/conf/nginx.conf:14
+2022/06/03 15:19:46 [notice] 14376#7060: signal process started
+2022/06/03 15:19:46 [error] 14376#7060: CreateFile() "E:\Curso_NodeJs\clase29\nodejs-forks-cluster-proxy\nginx-1.21.6/logs/nginx.pid" failed (2: El sistema no puede encontrar el archivo especificado)

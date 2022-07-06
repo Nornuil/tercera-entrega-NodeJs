@@ -6,6 +6,11 @@ const { Schema } = mongoose;
 const userSchema = new Schema({
   email: String,
   password: String,
+  nombre: String,
+  direction: String,
+  edad: Number,
+  telefono: Number,
+  avatarUrl: String,
 });
 //encripta el password antes de guardarlo en la db
 userSchema.methods.encryptPassword = (password) => {

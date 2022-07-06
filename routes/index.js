@@ -28,7 +28,10 @@ router.post(
     successRedirect: "/profile",
     failureRedirect: "/signin",
     failureFlash: true,
-  })
+  }),
+  function (req, res) {
+    res.json("Exito").status(200);
+  }
 );
 
 router.get("/profile", isAuthenticated, (req, res, next) => {
@@ -44,7 +47,6 @@ function isAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
     return next();
   }
-
   res.redirect("/");
 }
 

@@ -12,6 +12,7 @@ const { cpus } = require("os");
 const PORT = 8081;
 const modoCluster = process.argv[3] == "CLUSTER";
 const logger = require("./logger.js");
+const userRoutes = require('./routes/authRouter')
 
 // initializations
 const app = express();
@@ -26,11 +27,12 @@ app.set("view engine", "ejs");
 // middlewares
 app.use(morgan("dev")); //muestra las peticiones desde el front
 app.use(express.urlencoded({ extended: false })); //es para recibir los datos de un formulario
+app.use(express.json())
 app.use(
   session({
     secret: "mysecretsession",
-    resave: false,
-    saveUninitialized: false,
+    resave: true,
+    saveUninitialized: true,
   })
 );
 app.use(flash());
@@ -46,8 +48,8 @@ app.use((req, res, next) => {
 });
 
 // rutas
-app.use("/", require("./routes/index"));
-app.use("/auth", require("./routes/authRouter"));
+// app.use("/", require("./routes/index"));
+app.use("/auth", userRoutes);
 
 // Levanto puerto
 if (modoCluster && cluster.isPrimary) {

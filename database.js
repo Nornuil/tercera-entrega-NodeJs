@@ -7,7 +7,7 @@ try {
     useUnifiedTopology: true,
   });
   logger.info("Base de datos online");
-} catch (error) {
+} catch (error) { 
   logger.fatal("Error en iniciar la base de datos");
   throw new Error("Error en iniciar la base de datos");
 }

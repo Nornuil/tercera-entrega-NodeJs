@@ -1,42 +1,40 @@
 const passport = require("passport");
 
-const registroController = async (req, res = response) => {
-  passport.authenticate("registro", {
-    failureRedirect: "/auth/failRegister",
-    successRedirect: "/auth/successRegister",
-  });
-};
-
 // module.exports = loginController = passport.authenticate("login", {
 //   failureRedirect: "/auth/failLogin",
 //   successRedirect: "/auth/successLogin",
 // });
 
-const successRegisterController = async (req, res = response) => {
-  res.json({ msg: "ok" });
+const successRegisterController = async (req, res) => {
+  res.status(201).json({ msg: "Usuario Registrado exitosamente" });
 };
 
-const failRegisterController = async (req, res = response) => {
-  res.status(400).json({ err: "fallo el registro" });
+const failRegisterController = async (req, res) => {
+  try {
+    res.status(403).json({ error: "Usuario ya existe" });
+  } catch (error) {
+    res.status(404).json(error);
+  }
 };
 
-// module.exports = function successLoginController(req, res) {
-//   res.json({ msg: "ok" });
-// };
+const successLoginController = async (req, res = response) => {
+  res.json({ msg: "Logueo exitoso" });
+};
 
-// module.exports = function failLoginController(req, res) {
-//   res.status(400).json({ err: "fallo el login" });
-// };
+const failLoginController = async (req, res = response) => {
+  res.status(401).json({ error: "Error de credenciales" });
+};
 
 const logoutController = async (req, res = response) => {
   if (req.isAuthenticated()) {
     req.logout();
   }
-  res.sendStatus(200);
+  res.status(200).json({ msg: "Logout exitoso" });
 };
 
 module.exports = {
-  registroController,
+  failLoginController,
+  successLoginController,
   logoutController,
   successRegisterController,
   failRegisterController,

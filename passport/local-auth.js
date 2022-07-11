@@ -2,8 +2,6 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const userSchema = require("../models/user");
 const logger = require("../logger.js");
-const bcrypt = require("bcrypt-nodejs");
-const user = require("../models/user");
 
 passport.use(
   "local-signup",
@@ -17,9 +15,8 @@ passport.use(
       const email = req.body.email;
       const user = await userSchema.findOne({ email });
       if (!user) {
-        let newUser = req.body;
-        newUser.password = bcrypt.hashSync(password, bcrypt.genSaltSync(10));
-        console.log(newUser);
+        let newUser = new userSchema(req.body);
+        newUser.password = newUser.encryptPassword(req.body.password);
         const userNew = await userSchema.create(newUser);
         logger.info("Usuario creado");
         return done(null, userNew);
@@ -34,47 +31,27 @@ passport.use(
   "local-signin",
   new LocalStrategy(
     {
-      usernameField: "username",
+      usernameField: "email",
       passwordField: "password",
       passReqToCallback: true,
     },
-    async (req, username, password, done) => {
-      const user1 = await user.findOne({
-        email: req.body.email,
-      });
-      // console.log(req.body.pass);
-
-      console.log(user1.comparePassword(req.body.password));
-      // if (user) {
-      //   console.log(user);
-      //   logger.info("Usuario encontrado en db");
-      //   }
-      //   const result = await user.comparePassword(req.body.password);
-      //   if (result) {
-      //     logger.info("Usuario encontrado en db");
-      //     return done(null, user);
-      //   } else {
-      //     logger.info("Contraseña incorrecta");
-      return done(null, false);
-      //   }
-
-      // bcrypt.compare(req.body.password, user.password, function (err, res) {
-      //   if (err) {
-      //     // handle error
-      //     logger.info("mal contraseña");
-      //     return done(null, false);
-      //   }
-      //   if (res) {
-      //     logger.info("logueado ok");
-      //     return done(null, false);
-      //     // Send JWT
-      //   } else {
-      //     // response is OutgoingMessage object that server response http request
-      //     logger.info("mal contraseña2");
-      //     return done(null, false);
-      //   }
-      // });
-      // }
+    async (req, email, password, done) => {
+      const user = await userSchema.findOne({ email });
+      if (!user) {
+        console.log(user);
+        logger.info("Usuario no encontrado en db");
+        return done(null, false);
+      }
+      try {
+        console.log(user.password);
+        console.log(password);
+        console.log(user.comparePassword(password));
+      } catch (error) {
+        console.log(`error: ${error}`);
+        return done(null, false);
+      }
+      logger.info("Usuario logueado exitosamente");
+      return done(null, user);
     }
   )
 );

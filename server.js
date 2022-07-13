@@ -12,7 +12,7 @@ const { cpus } = require("os");
 const PORT = 8081;
 const modoCluster = process.argv[3] == "CLUSTER";
 const logger = require("./logger.js");
-const userRoutes = require('./routes/authRouter')
+const userRoutes = require("./routes/authRouter");
 
 // initializations
 const app = express();
@@ -27,7 +27,7 @@ app.set("view engine", "ejs");
 // middlewares
 app.use(morgan("dev")); //muestra las peticiones desde el front
 app.use(express.urlencoded({ extended: false })); //es para recibir los datos de un formulario
-app.use(express.json())
+app.use(express.json());
 app.use(
   session({
     secret: "mysecretsession",
@@ -39,16 +39,7 @@ app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
 
-//para los mensajes
-app.use((req, res, next) => {
-  app.locals.signinMessage = req.flash("signinMessage");
-  app.locals.signupMessage = req.flash("signupMessage");
-  app.locals.user = req.user;
-  next();
-});
-
 // rutas
-// app.use("/", require("./routes/index"));
 app.use("/auth", userRoutes);
 
 // Levanto puerto

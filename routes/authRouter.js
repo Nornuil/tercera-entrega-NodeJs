@@ -1,41 +1,38 @@
 const express = require("express");
 const authRouter = require("express").Router();
 const passport = require("passport");
-const authController = require("../controllers/authController");
 
 const {
   failLoginController,
-  // successLoginController,
+  successLoginController,
   failRegisterController,
-  //   loginController,
+  successRegisterController,
   logoutController,
 } = require("../controllers/authController");
 
+//Registro
 authRouter.post(
   "/registro",
   passport.authenticate("local-signup", {
-    failureRedirect: "error/failRegister",
-  }),
-  authController.successRegisterController
+    failureRedirect: "error/register/",
+    successRedirect: "success/register/",
+  })
 );
-authRouter.get("/error/failRegister", failRegisterController);
+authRouter.get("/error/register", failRegisterController);
+authRouter.get("/success/register", successRegisterController);
 
-// // login
+//Login
 authRouter.post(
   "/login",
   passport.authenticate("local-signin", {
-    failureRedirect: "error/failLogin",
-  }),
-  authController.successLoginController
+    failureRedirect: "error/login/",
+    successRedirect: "success/login/",
+  })
 );
-// authRouter.post("/login", loginController);
-authRouter.get("error/failLogin", failLoginController);
-// authRouter.get("/successLogin", successLoginController);
+authRouter.get("/error/login", failLoginController);
+authRouter.get("/success/login", successLoginController);
 
-// logout
-// authRouter.get("/logout", logoutController);
+//Logout
 authRouter.get("/logout", logoutController);
-
-//POST /registro --> para dar de alta un nuevo usuario
 
 module.exports = authRouter;

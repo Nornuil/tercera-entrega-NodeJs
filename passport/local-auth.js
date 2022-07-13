@@ -42,16 +42,12 @@ passport.use(
         logger.info("Usuario no encontrado en db");
         return done(null, false);
       }
-      try {
-        console.log(user.password);
-        console.log(password);
-        console.log(user.comparePassword(password));
-      } catch (error) {
-        console.log(`error: ${error}`);
+      if (!user.comparePassword(password)) {
+        logger.info("Contraseña incorrecta");
         return done(null, false);
       }
       logger.info("Usuario logueado exitosamente");
-      return done(null, user);
+      done(null, user);
     }
   )
 );

@@ -2,6 +2,8 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const userSchema = require("../models/user");
 const logger = require("../logger.js");
+const User = require("../service/user");
+const userController = new User();
 
 passport.use(
   "local-signup",
@@ -18,6 +20,7 @@ passport.use(
         let newUser = new userSchema(req.body);
         newUser.password = newUser.encryptPassword(req.body.password);
         const userNew = await userSchema.create(newUser);
+        userController.enviarEmailNuevoUsuario(req.body);
         logger.info("Usuario creado");
         return done(null, userNew);
       }

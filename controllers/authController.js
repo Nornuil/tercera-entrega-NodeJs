@@ -1,10 +1,3 @@
-const passport = require("passport");
-
-// module.exports = loginController = passport.authenticate("login", {
-//   failureRedirect: "/auth/failLogin",
-//   successRedirect: "/auth/successLogin",
-// });
-
 const successRegisterController = async (req, res) => {
   res.status(201).json({ msg: "Usuario Registrado exitosamente" });
 };
@@ -32,10 +25,15 @@ const logoutController = async (req, res = response) => {
   res.status(200).json({ msg: "Logout exitoso" });
 };
 
+const profileController = async (req, res = response) => {
+  res.json({ msg: "profile" }).status(201);
+};
+
 module.exports = {
   failLoginController,
   successLoginController,
   logoutController,
   successRegisterController,
   failRegisterController,
+  profileController,
 };

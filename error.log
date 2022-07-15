@@ -1,0 +1,13 @@
+[2022-07-14T20:59:35.737] [ERROR] default - Envio de mail fallo la verificacion del servidor Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials n14-20020a056870348e00b000f33b23a030sm1516474oah.57 - gsmtp
+[2022-07-14T21:02:32.216] [ERROR] default - Envio de mail fallo la verificacion del servidor Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor a25-20020a9d4719000000b00616d3ec6734sm1288840otf.53 - gsmtp
+[2022-07-14T21:04:19.399] [ERROR] default - Envio de mail fallo la verificacion del servidor Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u26-20020a54439a000000b00339de9f5df6sm1166303oiv.35 - gsmtp
+[2022-07-14T21:05:27.161] [ERROR] default - Envio de mail fallo la verificacion del servidor Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor g16-20020a9d6c50000000b0061c80736666sm645397otq.28 - gsmtp
+[2022-07-14T21:06:16.550] [ERROR] default - Envio de mail fallo la verificacion del servidor Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor a39-20020a056870a1a700b0010490c6b552sm1539984oaf.35 - gsmtp
+[2022-07-14T21:06:23.206] [ERROR] default - Envio de mail fallo la verificacion del servidor Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor f17-20020a0568301c3100b0061680c8c9e2sm1269803ote.70 - gsmtp
+[2022-07-14T21:27:32.276] [ERROR] default - Falló el envio de mail - error:TypeError: enviarEmail is not a function

@@ -1,6 +1,9 @@
-const express = require("express");
 const authRouter = require("express").Router();
 const passport = require("passport");
+const {
+  isAuthenticated,
+  isNotAuthenticated,
+} = require("../middlewares/isAuthenticated");
 
 const {
   failLoginController,
@@ -8,6 +11,7 @@ const {
   failRegisterController,
   successRegisterController,
   logoutController,
+  profileController,
 } = require("../controllers/authController");
 
 //Registro
@@ -33,6 +37,9 @@ authRouter.get("/error/login", failLoginController);
 authRouter.get("/success/login", successLoginController);
 
 //Logout
-authRouter.get("/logout", logoutController);
+authRouter.get("/logout", isNotAuthenticated, logoutController);
+
+//Profile
+authRouter.get("/profile", isAuthenticated, profileController);
 
 module.exports = authRouter;

@@ -55,6 +55,32 @@ passport.use(
   )
 );
 
+passport.use(
+  "delete-user",
+  new LocalStrategy(
+    {
+      usernameField: "email",
+      passwordField: "password",
+      passReqToCallback: true,
+    },
+    async (req, email, password, done) => {
+      const user = await userSchema.findOne({ email });
+      if (!user) {
+        console.log(user);
+        logger.info("Usuario no encontrado en db");
+        return done(null, false);
+      }
+      if (!user.comparePassword(password)) {
+        logger.info("Contraseña incorrecta");
+        return done(null, false);
+      }
+      await userSchema.deleteOne({ email });
+      logger.info("Usuario borrado exitosamente");
+      done(null, user);
+    }
+  )
+);
+
 passport.serializeUser((user, done) => {
   done(null, user._id);
 });

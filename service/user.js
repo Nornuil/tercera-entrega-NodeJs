@@ -63,21 +63,16 @@ class Usuarios {
 
   //enviarEmailNuevoUsuario
   async enviarEmailNuevoUsuario(objetoUsuario) {
-    logger.info(`UsuariosApi.js - enviarEmailNuevoUsuario`);
+    logger.info(`Enviando mail de confirmacion...`);
     try {
-      let correoDestino = "wallace223@hotmail.com";
-      let asunto = "Nuevo registro";
       let cuerpo = `<h1> Nuevo Registro </h1>
             <p><strong>Email: </strong>${objetoUsuario.email}</p>
-            <p><strong>Username: </strong>${objetoUsuario.username}</p>
-            <p><strong>Nombre: </strong>${objetoUsuario.nombre}</p>
-            <p><strong>Apellido: </strong>${objetoUsuario.apellido}</p>
+            <p><strong>Nombre: </strong>${objetoUsuario.username}</p>
+            <p><strong>Edad: </strong>${objetoUsuario.edad}</p>
             <p><strong>Direccion: </strong>${objetoUsuario.direccion}</p>
-            <p><strong>Fecha de Nacimiento: </strong>${objetoUsuario.fechaNacimiento}</p>
             <p><strong>Teléfono: </strong>${objetoUsuario.telefono}</p>
-            <p><strong>Avatar: </strong>${objetoUsuario.imagenUrl}</p>
-            <p><strong>Roles: </strong>${objetoUsuario.roles}</p>`;
-      await enviarEmail(correoDestino, asunto, cuerpo);
+            <p><strong>Avatar: </strong>${objetoUsuario.avatarUrl}</p>`;
+      await enviarEmail(objetoUsuario.email, "Nuevo Registro", cuerpo);
     } catch (err) {
       logger.error(`Falló el envio de mail - error:${err}`);
     }

@@ -29,6 +29,14 @@ const profileController = async (req, res = response) => {
   res.json({ msg: "profile" }).status(201);
 };
 
+const successDeleteController = async (req, res = response) => {
+  res.json({ msg: "Usuario borrado exitosamente" });
+};
+
+const failDeleteController = async (req, res = response) => {
+  res.status(401).json({ error: "Error de credenciales" });
+};
+
 module.exports = {
   failLoginController,
   successLoginController,
@@ -36,4 +44,6 @@ module.exports = {
   successRegisterController,
   failRegisterController,
   profileController,
+  successDeleteController,
+  failDeleteController,
 };

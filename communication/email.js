@@ -9,12 +9,12 @@ transporter.verify(function (error, success) {
     logger.error(`Envio de mail fallo la verificacion del servidor ${error}`);
     return;
   } else {
-    logger.info("Server is ready to take our messages.");
+    logger.info("Gmail listo para ser usado.");
   }
 });
 
 async function enviarEmail(correoDestino, asunto, cuerpo) {
-  logger.info("Enviando email con la notificación del nuevo pedido ...");
+  logger.info("Enviando mail con la notificación del nuevo pedido ...");
 
   const mailOptions = {
     from: "Servidor NodeJS",

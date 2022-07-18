@@ -12,6 +12,8 @@ const {
   successRegisterController,
   logoutController,
   profileController,
+  failDeleteController,
+  successDeleteController,
 } = require("../controllers/authController");
 
 //Registro
@@ -41,5 +43,16 @@ authRouter.get("/logout", isNotAuthenticated, logoutController);
 
 //Profile
 authRouter.get("/profile", isAuthenticated, profileController);
+
+//Delete
+authRouter.delete(
+  "/delete",
+  passport.authenticate("delete-user", {
+    failureRedirect: "error/delete/",
+    successRedirect: "success/delete/",
+  })
+);
+authRouter.get("/error/delete", failDeleteController);
+authRouter.get("/success/delete", successDeleteController);
 
 module.exports = authRouter;

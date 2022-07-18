@@ -6,8 +6,8 @@ const ServidorEnvioEmail = {
   service: "gmail",
   port: 587,
   auth: {
-    user: "nornuil223@gmail.com",
-    pass: "",
+    user: process.env.MAIL,
+    pass: process.env.MAIL_PASS,
   },
 };
 

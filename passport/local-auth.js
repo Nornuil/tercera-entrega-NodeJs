@@ -4,6 +4,8 @@ const userSchema = require("../models/user");
 const logger = require("../logger.js");
 const User = require("../service/user");
 const userController = new User();
+const Pedidos = require("../service/pedidos");
+const pedidos = new Pedidos();
 
 passport.use(
   "local-signup",
@@ -19,8 +21,14 @@ passport.use(
       if (!user) {
         let newUser = new userSchema(req.body);
         newUser.password = newUser.encryptPassword(req.body.password);
+        // userController.enviarEmailNuevoUsuario(req.body);
+        // userController.enviarWhatsappRegistro(
+        //   req.body.email,
+        //   req.body.username,
+        //   req.body.telefono
+        // );
+        pedidos.enviarSMSPedidoEnProceso(req.body.telefono);
         const userNew = await userSchema.create(newUser);
-        userController.enviarEmailNuevoUsuario(req.body);
         logger.info("Usuario creado");
         return done(null, userNew);
       }

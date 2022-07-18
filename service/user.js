@@ -1,4 +1,5 @@
 const { enviarEmail } = require("../communication/email.js");
+const { enviarWhatsapp } = require("../communication/whatsapp.js");
 const logger = require("../logger");
 
 class Usuarios {
@@ -60,6 +61,19 @@ class Usuarios {
   //          throw new CustomError(401, `Error al loguearse`, err)
   //     }
   // }
+
+  //enviarWhatsappNuevoPedido
+  async enviarWhatsappRegistro(email, nombre, telefono) {
+    logger.info(`Enviando whatsapp de registro...`);
+    try {
+      let from = "whatsapp:+14155238886"; // es el celu de twilio el que envia whatsapp
+      let to = process.env.WHATSAPP_ADMIN; //poner el celular del admin
+      let body = `*Nuevo registro*\nNombre:${nombre}\nTelefono:${telefono}\nEmail: ${email}`;
+      await enviarWhatsapp(from, to, body);
+    } catch (err) {
+      logger.error(`Falló el envio de whatsapp - error:${err}`);
+    }
+  }
 
   //enviarEmailNuevoUsuario
   async enviarEmailNuevoUsuario(objetoUsuario) {

@@ -11,3 +11,175 @@
 [2022-07-14T21:06:23.206] [ERROR] default - Envio de mail fallo la verificacion del servidor Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
 534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor f17-20020a0568301c3100b0061680c8c9e2sm1269803ote.70 - gsmtp
 [2022-07-14T21:27:32.276] [ERROR] default - Falló el envio de mail - error:TypeError: enviarEmail is not a function
+[2022-07-18T12:31:49.407] [ERROR] default - Falló el envio de whatsapp del nuevo pedido - error:ReferenceError: enviarWhatsapp is not defined
+[2022-07-18T12:36:28.292] [ERROR] default - Falló el envio de whatsapp del nuevo pedido - error:ReferenceError: enviarWhatsapp is not defined
+[2022-07-18T12:41:23.137] [ERROR] default - Falló el envio de whatsapp - error:ReferenceError: err is not defined
+[2022-07-18T12:41:52.698] [ERROR] default - RestException [Error]: Authenticate
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-07-18T12:45:47.787] [ERROR] default - RestException [Error]: From(whatsapp:+14155238886) and To(+541130561380) addresses should be of the same channel.
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 400,
+  code: 21910,
+  moreInfo: 'https://www.twilio.com/docs/errors/21910',
+  details: undefined
+}
+[2022-07-18T12:59:34.197] [ERROR] default - RestException [Error]: From(whatsapp:+14155238886) and To(+541130561380) addresses should be of the same channel.
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 400,
+  code: 21910,
+  moreInfo: 'https://www.twilio.com/docs/errors/21910',
+  details: undefined
+}
+[2022-07-18T13:02:40.964] [ERROR] default - RestException [Error]: From(whatsapp:+14155238886) and To(+5491130561380) addresses should be of the same channel.
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 400,
+  code: 21910,
+  moreInfo: 'https://www.twilio.com/docs/errors/21910',
+  details: undefined
+}
+[2022-07-18T13:04:24.614] [ERROR] default - RestException [Error]: From(whatsapp:+14155238886) and To(+5491130561380) addresses should be of the same channel.
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 400,
+  code: 21910,
+  moreInfo: 'https://www.twilio.com/docs/errors/21910',
+  details: undefined
+}
+[2022-07-18T13:08:28.958] [ERROR] default - RestException [Error]: Invalid channel type: whtsapp
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 400,
+  code: 20422,
+  moreInfo: 'https://www.twilio.com/docs/errors/20422',
+  details: undefined
+}
+[2022-07-18T13:09:44.347] [ERROR] default - RestException [Error]: The 'From' number whatsapp:+14155238886 is not a valid phone number, shortcode, or alphanumeric sender ID.
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 400,
+  code: 21212,
+  moreInfo: 'https://www.twilio.com/docs/errors/21212',
+  details: undefined
+}
+[2022-07-18T15:29:17.316] [ERROR] default - Falló el envio de SMS de confirmarción al usuario - error:ReferenceError: err is not defined
+[2022-07-18T15:29:54.891] [ERROR] default - RestException [Error]: The 'To' number 1130561380 is not a valid phone number.
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 400,
+  code: 21211,
+  moreInfo: 'https://www.twilio.com/docs/errors/21211',
+  details: undefined
+}
+[2022-07-18T15:31:38.527] [ERROR] default - RestException [Error]: The 'To' number 1130561380 is not a valid phone number.
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 400,
+  code: 21211,
+  moreInfo: 'https://www.twilio.com/docs/errors/21211',
+  details: undefined
+}
+[2022-07-18T15:33:22.089] [ERROR] default - RestException [Error]: The From phone number +18647404967 is not a valid, SMS-capable inbound phone number or short code for your account.
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 400,
+  code: 21606,
+  moreInfo: 'https://www.twilio.com/docs/errors/21606',
+  details: undefined
+}
+[2022-07-18T16:16:05.059] [ERROR] default - RestException [Error]: The From phone number +5491130561380 is not a valid, SMS-capable inbound phone number or short code for your account.
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 400,
+  code: 21606,
+  moreInfo: 'https://www.twilio.com/docs/errors/21606',
+  details: undefined
+}
+[2022-07-18T16:16:26.180] [ERROR] default - RestException [Error]: The From phone number +541130561380 is not a valid, SMS-capable inbound phone number or short code for your account.
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 400,
+  code: 21606,
+  moreInfo: 'https://www.twilio.com/docs/errors/21606',
+  details: undefined
+}

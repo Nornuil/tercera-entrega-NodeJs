@@ -21,12 +21,12 @@ passport.use(
       if (!user) {
         let newUser = new userSchema(req.body);
         newUser.password = newUser.encryptPassword(req.body.password);
-        // userController.enviarEmailNuevoUsuario(req.body);
-        // userController.enviarWhatsappRegistro(
-        //   req.body.email,
-        //   req.body.username,
-        //   req.body.telefono
-        // );
+        userController.enviarEmailNuevoUsuario(req.body);
+        userController.enviarWhatsappRegistro(
+          req.body.email,
+          req.body.username,
+          req.body.telefono
+        );
         pedidos.enviarSMSPedidoEnProceso(req.body.telefono);
         const userNew = await userSchema.create(newUser);
         logger.info("Usuario creado");

@@ -183,3 +183,179 @@
   moreInfo: 'https://www.twilio.com/docs/errors/21606',
   details: undefined
 }
+[2022-07-19T11:29:32.695] [ERROR] default - RestException [Error]: Authenticate
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-07-19T11:29:32.705] [ERROR] default - RestException [Error]: Authenticate
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-07-19T11:34:15.022] [ERROR] default - RestException [Error]: Authenticate
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-07-19T11:34:15.026] [ERROR] default - RestException [Error]: Authenticate
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-07-19T21:23:00.677] [ERROR] default - ReferenceError: _id is not defined
+    at new ProductoDto (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\dto\ProductoDto.js:29:5)
+    at Productos.addProducto (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\service\productos.js:22:22)
+    at agregarProducto (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\controllers\productosController.js:36:43)
+    at Layer.handle [as handle_request] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\route.js:137:13)
+    at isAuthenticated (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\middlewares\isAuthenticated.js:3:12)
+    at Layer.handle [as handle_request] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-20T13:07:10.546] [ERROR] default - Error: product validation failed: stock: Path `stock` is required., imagenURL: Path `imagenURL` is required., precio: Path `precio` is required., descripcion: Path `descripcion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:761:19)
+    at inspect (node:internal/util/inspect:338:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2004:40)
+    at Object.format (node:internal/util/inspect:1878:10)
+    at basicLayout (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\log4js\lib\layouts.js:64:57)
+    at app (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\log4js\lib\appenders\file.js:82:23)
+    at E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    stock: ValidatorError: Path `stock` is required.
+        at validate (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaNumber.SchemaType.doValidate (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\schematype.js:1314:7)
+        at E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\document.js:2747:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'stock',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    imagenURL: ValidatorError: Path `imagenURL` is required.
+        at validate (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaString.SchemaType.doValidate (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\schematype.js:1314:7)
+        at E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\document.js:2747:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'imagenURL',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaNumber.SchemaType.doValidate (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\schematype.js:1314:7)
+        at E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\document.js:2747:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    descripcion: ValidatorError: Path `descripcion` is required.
+        at validate (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaString.SchemaType.doValidate (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\schematype.js:1314:7)
+        at E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\document.js:2747:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'descripcion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaString.SchemaType.doValidate (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\schematype.js:1314:7)
+        at E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\document.js:2747:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'product validation failed'
+}
+[2022-07-20T16:11:19.528] [ERROR] default - CustomError {
+  estado: 404,
+  descripcion: 'Document not found in undefined with that {"id":"62d84c06662d4b1523934037"}',
+  detalles: undefined
+}
+[2022-07-20T16:54:03.056] [ERROR] default - MongooseError: Query was already executed: product.findOneAndUpdate({ _id: new ObjectId("62d84c06662d4b...
+    at model.Query._wrappedThunk [as _findOneAndUpdate] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\helpers\query\wrapThunk.js:21:19)
+    at E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\kareem\index.js:367:25
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  originalStack: 'Error\n' +
+    '    at model.Query._wrappedThunk [as _findOneAndUpdate] (E:\\Curso_NodeJs\\mauri\\tercera-entrega-NodeJs\\node_modules\\mongoose\\lib\\helpers\\query\\wrapThunk.js:25:28)\n' +
+    '    at E:\\Curso_NodeJs\\mauri\\tercera-entrega-NodeJs\\node_modules\\kareem\\index.js:367:25\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)'
+}
+[2022-07-20T16:55:03.380] [ERROR] default - MongooseError: Query was already executed: product.findOneAndUpdate({ _id: new ObjectId("62d84c06662d4b...
+    at model.Query._wrappedThunk [as _findOneAndUpdate] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\mongoose\lib\helpers\query\wrapThunk.js:21:19)
+    at E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\kareem\index.js:367:25
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  originalStack: 'Error\n' +
+    '    at model.Query._wrappedThunk [as _findOneAndUpdate] (E:\\Curso_NodeJs\\mauri\\tercera-entrega-NodeJs\\node_modules\\mongoose\\lib\\helpers\\query\\wrapThunk.js:25:28)\n' +
+    '    at E:\\Curso_NodeJs\\mauri\\tercera-entrega-NodeJs\\node_modules\\kareem\\index.js:367:25\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)'
+}
+[2022-07-20T18:29:09.854] [ERROR] default - ReferenceError: productoUpdate is not defined
+    at Productos.putProducto (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\service\productos.js:34:20)
+    at actualizarProducto (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\controllers\productosController.js:44:43)
+    at Layer.handle [as handle_request] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\route.js:137:13)
+    at isProductDataValid (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\middlewares\isAuthenticated.js:23:12)
+    at Layer.handle [as handle_request] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\route.js:137:13)
+    at isAuthenticated (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\middlewares\isAuthenticated.js:3:12)
+    at Layer.handle [as handle_request] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\route.js:137:13)

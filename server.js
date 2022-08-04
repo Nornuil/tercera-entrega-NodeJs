@@ -13,6 +13,7 @@ const PORT = 8081;
 const modoCluster = process.argv[3] == "CLUSTER";
 const logger = require("./logger.js");
 const userRoutes = require("./routes/authRouter");
+const ProductosRoutes = require("./routes/productos");
 
 // initializations
 const app = express();
@@ -41,6 +42,7 @@ app.use(passport.session());
 
 // rutas
 app.use("/auth", userRoutes);
+app.use("/api/productos", ProductosRoutes);
 
 // Levanto puerto
 if (modoCluster && cluster.isPrimary) {

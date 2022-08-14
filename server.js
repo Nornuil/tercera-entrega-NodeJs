@@ -14,7 +14,8 @@ const modoCluster = process.argv[3] == "CLUSTER";
 const logger = require("./logger.js");
 const userRoutes = require("./routes/authRouter");
 const ProductosRoutes = require("./routes/productos");
-
+const CarritosRoutes = require("./routes/carrito");
+const PedidosRoutes = require("./routes/pedido");
 // initializations
 const app = express();
 require("./database");
@@ -43,7 +44,8 @@ app.use(passport.session());
 // rutas
 app.use("/auth", userRoutes);
 app.use("/api/productos", ProductosRoutes);
-
+app.use("/api/carrito", CarritosRoutes);
+app.use("/api/pedido", PedidosRoutes);
 // Levanto puerto
 if (modoCluster && cluster.isPrimary) {
   const numCPUs = cpus().length;

@@ -1,5 +1,5 @@
 const productSchema = require("../models/productos");
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 class Productos {
   constructor() {}
@@ -36,13 +36,6 @@ class Productos {
       return await productSchema.findOneAndUpdate(
         { _id: mongoose.Types.ObjectId(id) },
         resto,
-        // {
-        //   nombre: objeto.nombre,
-        //   descripcion: objeto.descripcion,
-        //   precio: objeto.precio,
-        //   stock: objeto.stock,
-        //   imagenURL: objeto.imagenURL,
-        // },
         { new: true }
       );
     } catch (error) {

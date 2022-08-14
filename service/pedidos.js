@@ -4,10 +4,26 @@
 // import CustomError from '../errores/CustomError.js'
 const logger = require("../logger.js");
 // import { enviarEmail } from './notificaciones/email.js'
-// import { enviarWhatsapp } from './notificaciones/whatsapp.js'
+const { enviarWhatsapp } = require("../communication/whatsapp.js");
 const { enviarSMS } = require("../communication/sms.js");
+const Usuarios = require("./user");
+const usuarioService = new Usuarios();
+const Carritos = require("./carrito");
+const carritoService = new Carritos();
 
 class Pedidos {
+  async enviarPedido(idCarrito, idUsuario) {
+    try {
+      this.enviarSMSPedidoEnProceso(idCarrito, idUsuario);
+      this.enviarWhatsappPedidoEnProceso(idCarrito, idUsuario);
+      return "Pedido enviado por sms y whatsapp";
+    } catch (err) {
+      logger.error(
+        `Falló el envio de whatsapp del nuevo pedido - error:${err}`
+      );
+      return err;
+    }
+  }
   // constructor() {
   //     // this.pedidosDao = new PedidosDao();
   //     // this.usuariosDao = new UsuariosDao();
@@ -130,15 +146,32 @@ class Pedidos {
   // }
 
   //enviarSMSPedidoEnProceso
-  async enviarSMSPedidoEnProceso(telefonoUsuario) {
+  async enviarSMSPedidoEnProceso(idCarrito, idUsuario) {
     try {
       let from = process.env.SMS_messagingServiceSid;
-      let to = telefonoUsuario;
-      let body = `Su pedido ha sido recibido y se encuentra en proceso`;
+      let to = await usuarioService.findPhone(idUsuario);
+      let body = `Su pedido ha sido recibido y se encuentra en proceso : ${await carritoService.getProductOfCarrito(
+        idCarrito
+      )}}`;
       await enviarSMS(from, to, body);
     } catch (err) {
       logger.error(
         `Falló el envio de SMS de confirmarción al usuario - error:${err}`
+      );
+    }
+  }
+
+  async enviarWhatsappPedidoEnProceso(idCarrito, idUsuario) {
+    try {
+      let from = "whatsapp:+14155238886"; // es el celu de twilio el que envia whatsapp
+      let to = await usuarioService.findPhone(idUsuario);
+      let body = `Su pedido ha sido recibido y se encuentra en proceso : ${await carritoService.getProductOfCarrito(
+        idCarrito
+      )}}`;
+      await enviarWhatsapp(from, to, body);
+    } catch (err) {
+      logger.error(
+        `Falló el envio de whatsapp del nuevo pedido - error:${err}`
       );
     }
   }

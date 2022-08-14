@@ -359,3 +359,90 @@
     at isAuthenticated (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\middlewares\isAuthenticated.js:3:12)
     at Layer.handle [as handle_request] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\layer.js:95:5)
     at next (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\route.js:137:13)
+[2022-08-13T19:19:37.507] [ERROR] default - RestException [Error]: Authenticate
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-08-13T19:19:37.512] [ERROR] default - RestException [Error]: Authenticate
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-08-13T19:59:54.620] [ERROR] default - TypeError: carritosService.addCarrito is not a function
+    at crearCarrito (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\controllers\carritoController.js:48:43)
+    at Layer.handle [as handle_request] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\route.js:137:13)
+    at isAuthenticated (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\middlewares\isAuthenticated.js:3:12)
+    at Layer.handle [as handle_request] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\express\lib\router\index.js:335:12)
+[2022-08-13T22:08:33.053] [ERROR] default - Falló el envio de whatsapp del nuevo pedido - error:ReferenceError: enviarSMSPedidoEnProceso is not defined
+[2022-08-13T22:13:01.407] [ERROR] default - RestException [Error]: Authenticate
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-08-13T22:23:35.135] [ERROR] default - RestException [Error]: The 'To' number +54 is not a valid phone number.
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 400,
+  code: 21211,
+  moreInfo: 'https://www.twilio.com/docs/errors/21211',
+  details: undefined
+}
+[2022-08-13T23:17:22.193] [ERROR] default - Falló el envio de whatsapp del nuevo pedido - error:ReferenceError: enviarWhatsapp is not defined
+[2022-08-13T23:20:29.638] [ERROR] default - SyntaxError: Unexpected token P in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at inciarPedido (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\controllers\pedidosController.js:14:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-08-13T23:21:11.095] [ERROR] default - RestException [Error]: The 'To' number 1130561380 is not a valid phone number.
+    at success (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\q\q.js:1369:30)
+    at RawTask.call (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\asap.js:40:19)
+    at flush (E:\Curso_NodeJs\mauri\tercera-entrega-NodeJs\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 400,
+  code: 21211,
+  moreInfo: 'https://www.twilio.com/docs/errors/21211',
+  details: undefined
+}

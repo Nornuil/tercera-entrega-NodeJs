@@ -10,7 +10,7 @@ async function enviarWhatsapp(from, to, body) {
   const options = {
     body: body,
     from: from,
-    to: `whatsapp:${to}`,
+    to: `whatsapp:+549${to}`,
   };
 
   try {
